@@ -1,12 +1,12 @@
+import { motion } from "framer-motion"
 import React from 'react'
 import { SocialIcon } from 'react-social-icons'
-import { motion } from "framer-motion"
 
 type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <header className='sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
+    <header className='sticky top-0 z-20 mx-auto flex max-w-7xl items-start justify-between xl:items-center'>
       {/* Social Icons */}
       <motion.div
         initial={{
@@ -55,7 +55,7 @@ export default function Header({}: Props) {
         transition={{
           duration: 1.5
         }}
-        className='flex flex-row items-center text-gray-300 cursor-pointer'>
+        className='flex cursor-pointer flex-row items-center text-gray-300'>
         <SocialIcon
           className='cursor-pointer'
           network='email'
@@ -63,7 +63,7 @@ export default function Header({}: Props) {
           bgColor='transparent'
         />
         <p 
-          className='uppercase hidden md:inline-flex text-sm'
+          className='hidden text-sm uppercase md:inline-flex'
         >
           Contact In Touch
         </p>
