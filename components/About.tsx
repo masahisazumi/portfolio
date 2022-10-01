@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import React from 'react'
 
 type Props = {}
@@ -14,7 +15,7 @@ export default function About({}: Props) {
       <h3 className='absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500'>
         About
       </h3>
-      <motion.img
+      <motion.div
         initial={{
           x: -200,
           opacity: 0
@@ -27,10 +28,16 @@ export default function About({}: Props) {
           x: 0
         }}
         viewport={{ once: true }}
-        src="https://lh3.googleusercontent.com/a-/ACNPEu9YmzxfCNeRZU9nTVV9KtSwY-zWUYMnKFGXKlMsKg=s576-p-rw-no" 
-        alt="" 
-        className='md:h-95 -mb-20 hidden h-56 w-56 shrink-0 rounded-full object-cover md:mb-0 md:block md:w-64 md:rounded-lg'
-      />
+      >
+        <Image
+          src="/profile.jpg" 
+          alt="" 
+          className='-mb-20 hidden h-56 w-56 shrink-0 rounded-full object-cover md:mb-0 md:block md:w-64 md:rounded-lg'
+          width='576'
+          height='576'
+          layout='responsive'
+        />
+      </motion.div>
 
       <div className='space-y-10 px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>Here is a little background</h4>
