@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
 import React from 'react'
+import { motion } from 'framer-motion';
 
 type Props = {}
 
@@ -9,9 +9,9 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left'
+      className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
     >
-      <h3 className='absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500'>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
         About
       </h3>
       <motion.img
@@ -29,17 +29,13 @@ export default function About({}: Props) {
         viewport={{ once: true }}
         src="https://lh3.googleusercontent.com/a-/ACNPEu9YmzxfCNeRZU9nTVV9KtSwY-zWUYMnKFGXKlMsKg=s576-p-rw-no" 
         alt="" 
-        className='md:h-95 -mb-20 h-56 w-56 shrink-0 rounded-full object-cover md:mb-0 md:w-64 md:rounded-lg xl:h-[600px] xl:w-[500px]'
+        className='hidden md:block -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95'
       />
 
       <div className='space-y-10 px-0 md:px-10'>
         <h4 className='text-4xl font-semibold'>Here is a little background</h4>
         <p className='text-base'>
         Lorem ipsum dolor sit amet. Hic dolorem aliquam id autem voluptas qui cupiditate accusantium magni cumque et illo sint rem fugiat numquam sit fuga deleniti. Ut neque sit esse pariatur est perferendis consequatur vel velit ullam. Qui dolorum sint ad alias doloremque cum deleniti consequatur non delectus voluptatem ut neque iusto qui tempore libero.
-
-        Qui quisquam laboriosam et distinctio perferendis aut eligendi dolor vel dolor soluta qui officiis vitae. Et internos atque in dolores nihil sed dolore possimus. Sit omnis delectus sed minus cupiditate et consequatur soluta ut necessitatibus adipisci et perferendis voluptatum. Et optio molestiae quo debitis doloremque et possimus officia qui dolorem porro ut sint dolor qui inventore sunt ad reiciendis eveniet?
-
-        Et molestias animi qui sapiente consectetur aut laboriosam veniam ab quia maiores aut deserunt ducimus! Quo rerum explicabo ea quod repellendus et atque doloremque aut quae rerum nam eveniet doloribus.
         </p>
       </div>
     </motion.div>
