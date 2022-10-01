@@ -25,7 +25,7 @@ export default function Hero({}: Props) {
         className='relative mx-auto h-32 w-32 rounded-full object-cover'
         src="https://firebasestorage.googleapis.com/v0/b/ibc-for-beauty.appspot.com/o/users%2FlFp0O5drFOU0l0uUekg9tpH0jUv1%2Favatar?alt=media&amp;token=f860b92a-ec28-420f-93d8-ddae376e712f" alt="" />
       <div className='z-20'>
-        <h2 className='test-sm pb-2 uppercase tracking-[15px] text-gray-500'>
+        <h2 className='text-sm pb-2 uppercase tracking-[15px] text-gray-500'>
           Software Engineer
         </h2>
         <h1 className='scroll-px-10 text-5xl font-semibold lg:text-6xl'>
@@ -33,7 +33,7 @@ export default function Hero({}: Props) {
           <Cursor cursorColor='#F7A0BA' />
         </h1>
         <div className='pt-5'>
-          <Link href='#about' className='cousor-pointer'>
+          <Link href='#about'>
             <button className='heroButton'>About</button>
           </Link>
           <Link href='#works'>

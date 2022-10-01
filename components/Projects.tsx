@@ -1,5 +1,5 @@
-import React from 'react'
 import { motion } from 'framer-motion';
+import React from 'react'
 
 type Props = {}
 
@@ -8,13 +8,13 @@ export default function Projects({}: Props) {
 
 
   return (
-    <div className='h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0'>
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+    <div className='relative z-0 mx-auto flex h-screen max-w-full flex-col items-center justify-evenly overflow-hidden text-left md:flex-row'>
+      <h3 className='absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500'>
         Projects
       </h3>
-      <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20'>
+      <div className='relative z-20 flex w-full snap-x snap-mandatory overflow-y-hidden overflow-x-scroll'>
         {projects.map((project, i) => (
-          <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
+          <div className='flex h-screen w-screen shrink-0 snap-center flex-col items-center justify-center space-y-5 p-20 md:p-44'>
             <motion.img
               initial={{
                 y: -300,
@@ -25,8 +25,8 @@ export default function Projects({}: Props) {
               viewport={{ once: true }}
               src="https://pc.jpita.jp/swfu/d/pcsumaho.jpg" alt="" 
             />
-            <div className='space-y-10 px-10 md:px-10 max-w-6xl'>
-              <h4 className='text-4xl font-semibold text-center'>
+            <div className='max-w-6xl space-y-10 px-10 md:px-10'>
+              <h4 className='text-center text-4xl font-semibold'>
                 Case Study {i + 1} of 5: UPS clone
               </h4>
               <p>
@@ -37,7 +37,7 @@ export default function Projects({}: Props) {
         ))}
 
       </div>
-      <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12' />
+      <div className='absolute top-[30%] left-0 h-[500px] w-full -skew-y-12 bg-[#F7AB0A]/10' />
     </div>
   )
 }

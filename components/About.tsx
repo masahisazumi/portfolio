@@ -1,5 +1,5 @@
+import { motion } from 'framer-motion'
 import React from 'react'
-import { motion } from 'framer-motion';
 
 type Props = {}
 
@@ -9,9 +9,9 @@ export default function About({}: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
+      className='relative mx-auto flex h-screen max-w-7xl flex-col items-center justify-evenly px-10 text-center md:flex-row md:text-left'
     >
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>
+      <h3 className='absolute top-24 text-2xl uppercase tracking-[20px] text-gray-500'>
         About
       </h3>
       <motion.img
@@ -29,7 +29,7 @@ export default function About({}: Props) {
         viewport={{ once: true }}
         src="https://lh3.googleusercontent.com/a-/ACNPEu9YmzxfCNeRZU9nTVV9KtSwY-zWUYMnKFGXKlMsKg=s576-p-rw-no" 
         alt="" 
-        className='hidden md:block -mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95'
+        className='md:h-95 -mb-20 hidden h-56 w-56 shrink-0 rounded-full object-cover md:mb-0 md:block md:w-64 md:rounded-lg'
       />
 
       <div className='space-y-10 px-0 md:px-10'>
